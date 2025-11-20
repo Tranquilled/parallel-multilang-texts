@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>My Webpage</title>
+</head>
+<body>
+    <h1>{{ title }}</h1>
+    <table><tbody>
+        {% for row in rows %}
+            <tr>
+            {% for cell in row %}
+                <td style="vertical-align:top;padding:20px">{{ cell }}</td>
+            {% endfor %}
+            </tr>
+        {% endfor %}
+    </tbody></table>
+
+    {# a comment #}
+</body>
+</html>
