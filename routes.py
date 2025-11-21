@@ -9,7 +9,7 @@ from itertools import zip_longest
 import lorem
 
 app = Flask(__name__)
-app.secret_key = b"@UUi8Q!^n&W82@&"
+app.secret_key = b"@UUi8Q!^n&W82@&"  # TODO: don't deploy this
 app.config['MAX_CONTENT_LENGTH'] = 16 * 1000 * 1000
 with tempfile.TemporaryDirectory() as tmpdir:
     app.config["UPLOAD_FOLDER"] = UPLOAD_FOLDER = tmpdir
